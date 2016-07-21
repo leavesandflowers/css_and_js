@@ -1,6 +1,6 @@
 {
   "name": "wow.js浅析",
   "tagline": "页面滚动时的元素动画效果",
-  "body": "# 使用方法\r\n## 1、引入文件\r\n\r\n`<link rel=\"stylesheet\" href=\"css/animate.min.css\">`\r\n`<script src=\"js/wow.min.js\"></script>`\r\n\r\n## 2、HTML\r\n\r\n`<div class=\"wow slideInLeft\"></div>`\r\n`<div class=\"wow slideInRight\"></div>`\r\n\r\n可以加入 data-wow-duration（动画持续时间）和 data-wow-delay（动画延迟时间）属性，如：\r\n\r\n`<div class=\"wow slideInLeft\" data-wow-duration=\"2s\" data-wow-delay=\"5s\"></div>`\r\n`<div class=\"wow slideInRight\" data-wow-offset=\"10\"  data-wow-iteration=\"10\"></div>`\r\n\r\n## 3、JavaScript\r\n\r\n`new WOW().init();`\r\n",
+  "body": "\r\n# 使用方法\r\n## 1、引入文件\r\n\r\n`<link rel=\"stylesheet\" href=\"css/animate.min.css\">`  \r\n`<script src=\"js/wow.min.js\"></script>`  \r\n\r\n## 2、HTML\r\n\r\n`<div class=\"wow slideInLeft\"></div>`  \r\n`<div class=\"wow slideInRight\"></div>`  \r\n\r\n可以加入 data-wow-duration（动画持续时间）和 data-wow-delay（动画延迟时间）属性，如：\r\n\r\n`<div class=\"wow slideInLeft\" data-wow-duration=\"2s\" data-wow-delay=\"5s\"></div>`  \r\n`<div class=\"wow slideInRight\" data-wow-offset=\"10\"  data-wow-iteration=\"10\"></div>`  \r\n\r\n## 3、JavaScript\r\n\r\n`new WOW().init();`  \r\n\r\n# 注意事项\r\n\r\n这里只是简单介绍了用法 ，并尝试了大部分动画效果做了一个实例[https://github.com/leavesandflowers/css_and_js](https://github.com/leavesandflowers/css_and_js)  \r\n如果觉得不够详细 ，可以去看源码及文档 ，[https://github.com/matthieua/WOW](https://github.com/matthieua/WOW)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
