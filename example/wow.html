@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>WOW.js演示_dowebok</title>
+<link rel="stylesheet" href="http://cdn.dowebok.com/98/css/animate.min.css">
+<style>
+* { margin: 0; padding: 0;}
+body { overflow-x: hidden; font-family: "Microsoft Yahei";}
+body h1 { width: 100%; margin: 80px 0; font-size: 50px; font-weight: 500; text-align: center;}
+body .txt { margin: 80px 0; font-size: 16px; text-align: center;}
+.dowebok { margin: 0 auto;}
+.dowebok ul { list-style-type: none;}
+.dowebok .row { font-size: 0; text-align: center;}
+.dowebok .wow { display: inline-block; width: 280px; height: 280px; margin: 30px 15px 0; font: 30px/280px "Microsoft Yahei"; vertical-align: top; *display: inline; zoom: 1;}
+.bg-green { background: #5bd5a0;}
+.bg-blue { background: #1daee9;}
+.bg-purple { background: #c843a5;}
+.bg-red { background: #eb3980;}
+.bg-yellow { background: #ffcc35;}
+</style>
+</head>
+<!-- 1、引入文件
+
+<link rel="stylesheet" href="css/animate.min.css">
+2、HTML
+
+<div class="wow slideInLeft"></div>
+<div class="wow slideInRight"></div>
+可以加入 data-wow-duration（动画持续时间）和 data-wow-delay（动画延迟时间）属性，如：
+
+<div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"></div>
+<div class="wow slideInRight" data-wow-offset="10"  data-wow-iteration="10"></div>
+3、JavaScript
+
+new WOW().init();
+如果需要自定义配置，可如下使用：
+
+var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+});
+wow.init(); -->
+<body>
+<h1>WOW.js - 让页面滚动更有趣</h1>
+
+<div class="dowebok">
+	<div class="row">
+		<div class="wow rollIn bg-blue">旋转入</div>
+		<div class="wow bounceInDown bg-green">弹跳上入</div>
+		<div class="wow lightSpeedIn bg-purple">快速入</div>
+	</div>
+
+	<div class="row">
+		<div class="wow rollIn bg-yellow" data-wow-delay="0.5s">旋转入(延迟0.5s)</div>
+		<div class="wow pulse bg-red" data-wow-iteration="5" data-wow-duration="0.15s">脉搏(间隔0.15s)</div>
+		<div class="wow bounceInRight bg-blue">弹跳右入</div>
+	</div>
+
+	<div class="row">
+		<div class="wow bounceInLeft bg-green">弹跳左入</div>
+		<div class="wow flipInX bg-purple">X轴翻转</div>
+		<div class="wow flipInY bg-yellow">Y轴翻转</div>
+	</div>
+
+	<div class="row">
+		<div class="wow fadeInLeft bg-blue">淡左入</div>
+		<div class="wow shake bg-red" data-wow-iteration="5" data-wow-duration="0.15s">抖动(间隔0.15s)</div>
+		<div class="wow swing bg-purple" data-wow-iteration="2">秋千</div>
+	</div>
+
+	<div class="row">
+		<div class="wow rotateInDownLeft bg-red">旋转左入</div>
+		<div class="wow bounceInU bg-yellow" data-wow-delay="0.5s">？</div>
+		<div class="wow slideInRight bg-green" data-wow-delay="0.5s" data-wow-duration="0.15s">右入</div>
+	</div>
+
+	<div class="row">
+		<div class="wow fadeInLeftBig bg-purple">淡左入</div>
+		<div class="wow pulse bg-blue" data-wow-iteration="5" data-wow-duration="0.25s"></div>
+		<div class="wow zoomInRight bg-yellow">缩放右入</div>
+	</div>
+
+</div>
+
+<script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+
+
+
+
+</body>
+</html>
